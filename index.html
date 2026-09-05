@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>École Mixte Émile Roumer de Jacmel | EMERJ</title>
+  <meta name="description" content="Site officiel de l'École Mixte Émile Roumer de Jacmel (EMERJ).">
+  <style>
+    :root{
+      --bleu:#0b2d63;
+      --orange:#f5a623;
+      --creme:#fff7e8;
+      --blanc:#ffffff;
+      --texte:#243044;
+    }
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--texte);background:#fff}
+    header{background:linear-gradient(135deg,var(--bleu),#164a91);color:white;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px #0002}
+    .nav{max-width:1150px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800}
+    .brand img{width:55px;height:55px;object-fit:contain;border-radius:50%;background:white}
+    nav a{color:white;text-decoration:none;margin-left:18px;font-weight:700;font-size:14px}
+    nav a:hover{color:#ffd27a}
+    .hero{background:linear-gradient(#0b2d63e8,#0b2d63e8),url('logo-emerj.jpg') center/cover;min-height:600px;display:flex;align-items:center}
+    .hero-content{max-width:1150px;margin:auto;padding:70px 20px;color:white;width:100%}
+    .hero-logo{width:170px;max-width:45vw;background:white;border-radius:18px;padding:10px;margin-bottom:20px}
+    h1{font-size:clamp(32px,6vw,62px);margin:0 0 15px;line-height:1.05}
+    .slogan{font-size:22px;color:#ffd27a;font-weight:700;margin-bottom:28px}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:14px 22px;border-radius:8px;text-decoration:none;font-weight:800}
+    .btn-primary{background:var(--orange);color:var(--bleu)}
+    .btn-light{background:white;color:var(--bleu)}
+    section{padding:70px 20px}
+    .container{max-width:1150px;margin:auto}
+    .section-title{text-align:center;color:var(--bleu);font-size:34px;margin:0 0 12px}
+    .section-sub{text-align:center;max-width:750px;margin:0 auto 38px;line-height:1.7}
+    .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+    .card{background:white;border-radius:14px;padding:28px 22px;text-align:center;box-shadow:0 5px 22px #0b2d6315;border-top:5px solid var(--orange)}
+    .card .icon{font-size:38px}
+    .card h3{color:var(--bleu)}
+    .alt{background:var(--creme)}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+    .about-box{background:var(--bleu);color:white;border-radius:18px;padding:35px}
+    .about-box h3{color:#ffd27a;font-size:28px}
+    .info{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .info-box{padding:25px;border-radius:14px;background:#fff;border:1px solid #eee}
+    .info-box strong{display:block;color:var(--bleu);margin-bottom:10px}
+    .price{font-size:34px;font-weight:900;color:var(--orange)}
+    .contact{background:var(--bleu);color:white}
+    .contact .section-title{color:white}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+    .contact-card{background:#ffffff12;border:1px solid #ffffff25;padding:28px;border-radius:14px}
+    .contact-card a{color:#ffd27a;text-decoration:none;font-weight:800}
+    footer{background:#071d40;color:white;text-align:center;padding:25px 20px;font-size:14px}
+    @media(max-width:800px){
+      nav{display:none}
+      .cards{grid-template-columns:repeat(2,1fr)}
+      .about,.contact-grid{grid-template-columns:1fr}
+      .info{grid-template-columns:1fr}
+    }
+    @media(max-width:520px){.cards{grid-template-columns:1fr}.hero{min-height:540px}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="logo-emerj.jpg" alt="Logo EMERJ">
+      <span>EMERJ</span>
+    </div>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="#ecole">L'école</a>
+      <a href="#niveaux">Nos niveaux</a>
+      <a href="#admissions">Admissions</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="accueil">
+    <div class="hero-content">
+      <img class="hero-logo" src="logo-emerj.jpg" alt="École Mixte Émile Roumer de Jacmel">
+      <h1>École Mixte Émile Roumer de Jacmel</h1>
+      <div class="slogan">Former aujourd'hui les leaders de demain</div>
+      <p style="max-width:700px;font-size:18px;line-height:1.7">
+        Bienvenue à l'EMERJ, un établissement scolaire dédié à la formation
+        académique, humaine et citoyenne de la jeunesse.
+      </p>
+      <div class="buttons">
+        <a class="btn btn-primary" href="#admissions">📝 Informations d'inscription</a>
+        <a class="btn btn-light" href="#contact">📞 Nous contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="ecole">
+    <div class="container">
+      <h2 class="section-title">Bienvenue à l'EMERJ</h2>
+      <p class="section-sub">
+        L'École Mixte Émile Roumer de Jacmel œuvre pour offrir aux élèves
+        un cadre favorable à l'apprentissage, au développement des compétences
+        et à la construction d'un avenir meilleur.
+      </p>
+      <div class="about">
+        <div>
+          <h3 style="color:var(--bleu)">Une école, une mission</h3>
+          <p style="line-height:1.8">
+            Notre ambition est d'accompagner chaque élève dans son parcours
+            scolaire en mettant l'accent sur la qualité de l'enseignement,
+            la discipline, le respect et le développement personnel.
+          </p>
+          <p style="line-height:1.8">
+            Cette section pourra être enrichie avec l'historique officiel,
+            la mission, la vision, les valeurs et un mot de la direction.
+          </p>
+        </div>
+        <div class="about-box">
+          <h3>Notre engagement</h3>
+          <p style="line-height:1.8">
+            Préparer les jeunes à devenir des citoyens responsables,
+            compétents et capables de contribuer positivement à la société.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="niveaux">
+    <div class="container">
+      <h2 class="section-title">Nos niveaux</h2>
+      <p class="section-sub">Un parcours éducatif adapté aux différentes étapes de la scolarité.</p>
+      <div class="cards">
+        <div class="card"><div class="icon">🧒</div><h3>Kindergarten</h3><p>Éveil, socialisation et premières compétences.</p></div>
+        <div class="card"><div class="icon">📚</div><h3>Fondamental</h3><p>Acquisition et consolidation des savoirs fondamentaux.</p></div>
+        <div class="card"><div class="icon">🏫</div><h3>Secondaire</h3><p>Approfondissement des connaissances et développement des compétences.</p></div>
+        <div class="card"><div class="icon">🎓</div><h3>Terminale</h3><p>Préparation aux examens et à la poursuite des études.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admissions">
+    <div class="container">
+      <h2 class="section-title">Admissions & Inscriptions</h2>
+      <p class="section-sub">
+        Les informations ci-dessous pourront être complétées avec les dates,
+        pièces exigées, frais de scolarité et procédure officielle.
+      </p>
+      <div class="info">
+        <div class="info-box">
+          <strong>Frais d'inscription</strong>
+          <div class="price">500 Gdes</div>
+        </div>
+        <div class="info-box">
+          <strong>Adresse</strong>
+          1, Impasse Lubin<br>Démontreuil, Jacmel
+        </div>
+        <div class="info-box">
+          <strong>Renseignements</strong>
+          Appelez l'un de nos numéros pour obtenir les informations d'admission.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <h2 class="section-title">Vie scolaire</h2>
+      <p class="section-sub">
+        Cet espace pourra accueillir les actualités, activités culturelles,
+        sportives, cérémonies, photos, résultats et communiqués de l'école.
+      </p>
+      <div class="cards">
+        <div class="card"><div class="icon">📢</div><h3>Annonces</h3><p>Communiqués et informations importantes.</p></div>
+        <div class="card"><div class="icon">📸</div><h3>Galerie</h3><p>Photos des activités et événements scolaires.</p></div>
+        <div class="card"><div class="icon">🏅</div><h3>Réussites</h3><p>Distinctions et réalisations de nos élèves.</p></div>
+        <div class="card"><div class="icon">📅</div><h3>Calendrier</h3><p>Dates et événements de l'année académique.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Nous contacter</h2>
+      <p class="section-sub" style="color:#fff">
+        L'École Mixte Émile Roumer de Jacmel est à votre disposition pour tout renseignement.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>📍 Adresse</h3>
+          <p>1, Impasse Lubin, Démontreuil, Jacmel</p>
+        </div>
+        <div class="contact-card">
+          <h3>📞 Téléphones</h3>
+          <p>
+            <a href="tel:+50948511673">4851-1673</a><br>
+            <a href="tel:+50938904469">3890-4469</a><br>
+            <a href="tel:+50933106307">3310-6307</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2026 École Mixte Émile Roumer de Jacmel (EMERJ) — Former aujourd'hui les leaders de demain.
+</footer>
+
+</body>
+</html>
